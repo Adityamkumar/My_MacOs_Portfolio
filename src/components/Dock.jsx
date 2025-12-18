@@ -13,7 +13,7 @@ const Dock = () => {
 
     const icons = dock.querySelectorAll(".dock-icon");
 
-      const { left } = dock.getBoundingClientRect();
+    const { left } = dock.getBoundingClientRect();
     const animateIcons = (mouseX) => {
       icons.forEach((icon) => {
         const { left: iconLeft, width } = icon.getBoundingClientRect();
@@ -29,9 +29,10 @@ const Dock = () => {
       });
     };
 
-  const handleMouseMove = (e) => {
+    const handleMouseMove = (e) => {
       animateIcons(e.clientX - left);
-  } 
+    };
+
     const resetIcons = () =>
       icons.forEach((icon) =>
         gsap.to(icon, {
