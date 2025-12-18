@@ -13,14 +13,13 @@ const Dock = () => {
 
     const icons = dock.querySelectorAll(".dock-icon");
 
-    const animateIcons = (mouseX) => {
       const { left } = dock.getBoundingClientRect();
+    const animateIcons = (mouseX) => {
       icons.forEach((icon) => {
         const { left: iconLeft, width } = icon.getBoundingClientRect();
         const center = iconLeft - left + width / 2;
         const distance = Math.abs(mouseX - center);
         const intensity = Math.exp(-(distance ** 2.7) / 20000);
-
         gsap.to(icon, {
           scale: 1 + 0.25 * intensity,
           y: -15 * intensity,
@@ -30,12 +29,9 @@ const Dock = () => {
       });
     };
 
-    const handleMouseMove = (e) => {
-      const { left } = dock.getBoundingClientRect();
-
+  const handleMouseMove = (e) => {
       animateIcons(e.clientX - left);
-    };
-
+  } 
     const resetIcons = () =>
       icons.forEach((icon) =>
         gsap.to(icon, {
@@ -55,7 +51,7 @@ const Dock = () => {
     };
   }, []);
 
-  const toggleApp = (app) => {};
+  const toggleApp = () => {};
   return (
     <section id="dock">
       <div ref={dockRef} className="dock-container">
