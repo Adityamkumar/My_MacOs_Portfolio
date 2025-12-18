@@ -99,7 +99,7 @@ body {
   }
 
   #window-controls {
-    @apply flex gap-2;
+    @apply flex gap-2 p-2;
 
     .close {
       @apply size-3.5 rounded-full bg-[#ff6157] cursor-pointer;
