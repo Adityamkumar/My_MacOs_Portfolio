@@ -104,12 +104,6 @@ src/
 └── main.jsx         # React DOM rendering
 ```
 
-## 📸 Demo
-
-
-![Portfolio Demo](/macos-portfolio/public/images/preview.png)
-
-
 <div align="center">
   Made with ❤️ by Aditya Kumar
 </div>
