@@ -314,7 +314,7 @@ const ABOUT_LOCATION = {
       description: [
         "Hey! I’m Aditya 👋, a web developer who enjoys building sleek, interactive and animated websites.",
         "I have knowledge in JavaScript, React, Vanila Css, Tailwind Css and I love making things feel smooth, fast, and just a little bit delightful.",
-        "and I have also worked with Nodejs, Express and MondoDB.",
+        "and I have also worked with NodeJS, ExpressJS and MongoDB.",
       ],
     },
   ],
